@@ -16,7 +16,7 @@ class StarRating extends Component {
         for ( let i = 0; i < maxRating; i++ ) {
             stars.push(
                 <Star
-                isSelected={this.state.rating > i}
+                isSelected={ this.state.rating > i }
                 key={i}
                 setRating={ () => this.handleSetRating(i + 1) }
                 />
